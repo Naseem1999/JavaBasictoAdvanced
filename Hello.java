@@ -1,21 +1,29 @@
 class Hello{
     public static void main(String[] args) {
-        //literals
-        // int num1=0x7E;
-        // int num1=10_00_00_000;
-        // double num1=45;
-        // double num1=12e10;
-        // boolean num1=1;
+        //Type conversion and Casting
 
-        // char c='a';
-        // System.out.println(c+1);
+        // byte b=(byte)257;
 
-        char c='a';
-        c++;
-        System.out.println(c);
+        // byte b=127;
+        // int a=b;
+        // int a=12;
+        // byte k=(byte)a;
+
+        //  int a=257;
+        //  byte k=(byte)a;
+
+        // float f=5.6f;
+        // int t=(int)f;
 
 
-        //  System.out.println(num1);
+        // type promotion
+
+        byte a=10;
+        byte b=30;
+
+        int res=a*b;
+
+        System.out.println(res);
 
     }
 }
