@@ -1,29 +1,28 @@
 class Hello{
     public static void main(String[] args) {
-        //Type conversion and Casting
+        //Operators
 
-        // byte b=(byte)257;
+       int num1=7;
+       int num2=5;
 
-        // byte b=127;
-        // int a=b;
-        // int a=12;
-        // byte k=(byte)a;
+    //   int result=num1+num2;
+    //   int result=num1*num2;
+    //   int result=num1-num2;
+    //   int result=num1/num2;
+        //  int result=num1%num2;
+        // num1=num1+2;
+        // num1 += 2;
+        // num1=num1+1;
+        // num1+=1;
+        // num1++;
+        // num1--;
 
-        //  int a=257;
-        //  byte k=(byte)a;
+    // pre increment and postINCREMENT
+    // int res=++num1;  //8 first increment and then fetch value
+    //    int res=num1++; //7 first fetch the value then it will increment
+        
 
-        // float f=5.6f;
-        // int t=(int)f;
-
-
-        // type promotion
-
-        byte a=10;
-        byte b=30;
-
-        int res=a*b;
-
-        System.out.println(res);
+    //    System.out.println(res);
 
     }
 }
