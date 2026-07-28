@@ -81,33 +81,57 @@ public class Demo {
         //     System.out.println(nums[i]);
         // }
 
-        Student s1=new Student();
-        s1.name="Naseem";
-        s1.marks=99;
-        s1.rollno=1223;
+        // Student s1=new Student();
+        // s1.name="Naseem";
+        // s1.marks=99;
+        // s1.rollno=1223;
 
-        Student s2=new Student();
-        s2.name="Mubeen";
-        s2.marks=87;
-        s2.rollno=4444444;
+        // Student s2=new Student();
+        // s2.name="Mubeen";
+        // s2.marks=87;
+        // s2.rollno=4444444;
 
-        Student s3=new Student();
-        s3.name="Naeem";
-        s3.marks=99;
-        s3.rollno=3444444;
+        // Student s3=new Student();
+        // s3.name="Naeem";
+        // s3.marks=99;
+        // s3.rollno=3444444;
        
-        Student student[]=new Student[3];
-        student[0]=s1;
-        student[1]=s2;
-        student[2]=s3;
+        // Student student[]=new Student[3];
+        // student[0]=s1;
+        // student[1]=s2;
+        // student[2]=s3;
 
-        for(int i=0;i<student.length;i++){
-            System.out.println(student[i].name +":" + student[i].marks);
-        }
+        // for(int i=0;i<student.length;i++){
+        //     System.out.println(student[i].name +":" + student[i].marks);
+        // }
 
-        for(Student s: student){
-            System.out.println(s.name +":" +s.marks +":"+s.rollno);
-        }
+        // for(Student s: student){
+        //     System.out.println(s.name +":" +s.marks +":"+s.rollno);
+        // }
+        //string is not cahngable you are creating new strings
+        // String s1=new String("Naseem");
+        // String name="Naseem ";
+        // name=name + "Mushtaq";
+        // System.out.println(s1.concat("dasdasd"));
+        // System.out.println(s1.charAt(1));
+
+        // System.out.println("hello"+ " " +name);
+        // System.out.println(name);
+
+        // String n1="navin";
+        // String n2="navin";
+        // System.out.println(n1==n2);
+        
+       //mutable and immuteable strings bydefault strings are immutable
+
+
+       StringBuffer sb=new StringBuffer("Naseem");
+       sb.append(" Mushtaq");
+    //    sb.deleteCharAt(2);
+    // sb.insert(7, "Java ");
+    sb.setLength(30);
+       System.out.println(sb);
+    //    String str=sb.toString();
 
     }
 }
