@@ -1,32 +1,18 @@
-class A{
-    int num=1;
-}
-class B extends A{
-    int num=2;
-    public int getValue(){
-        int num=3;
-        // return num;
-        // return this.num;
-        return super.num;
+class Calc{
+    public int add(int n1,int n2){
+       return n1+n2;
     }
 }
+class AdvCalc extends Calc{
+    // public int add(int n1,int n2){
+    //     return n1+n2+1;
+    // }
+}
+
 public class Demo {
     public static void main(String[] args)  {
-        B obj=new B();
-        // System.out.println(obj.num);
-        System.out.println(obj.getValue());
-    //    VeryAdvCalc obj=new VeryAdvCalc();
-
-    //    int r1=obj.add(3,3);
-    //    int r2=obj.sub(9,3);
-    //    int r3=obj.multi(9,3);
-    //    int r4=obj.div(9,3);
-    //    double r5=obj.power(2, 3);
-
-    //    System.out.println(r1);
-    //    System.out.println(r2);
-    //    System.out.println(r3);
-    //    System.out.println(r4);
-    //    System.out.println(r5);
+       AdvCalc obj=new AdvCalc();
+       int r1=obj.add(3, 4);
+       System.out.println(r1);
     }
 }
