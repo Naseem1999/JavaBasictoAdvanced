@@ -1,33 +1,29 @@
-import other.*;
-class A{
-public void show(){
-  System.out.println("In a Show");
+//final variable,class,method
+
+class Calc{  //if you make class final then it should not be extended
+  public final void show(){ //if you not want to override the method use final keyword
+    System.out.println("In calc show");
+  }
+  public void add(int a,int b){
+    System.out.println(a+b);
+  }
 }
-}
-class B extends A{
-public void show(){
-  System.out.println("In a Show B");
-}
-}
-class C extends A{
-public void show(){
-  System.out.println("In a Show C");
-}
+
+class AdvCalc extends Calc{  //
+  public void show(){
+    System.out.println("In calc show");
+  }
 }
 
 public class Demo {
     public static void main(String[] args)  {
-      // A obj=new B();
-      // obj.show();
+      // final int num=6;
+      // num=3;
+      // System.out.println(num);
 
-      A obj=new A();
+      Calc obj=new Calc();
       obj.show();
+      obj.add(3, 5);
 
-
-      obj=new B();
-      obj.show();
-
-      obj=new C();
-      obj.show();
     }
 }
